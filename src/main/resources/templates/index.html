@@ -9,7 +9,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico"/>
 
-    <title>Navbar Template for Bootstrap</title>
+    <title>Gainful Achivement System</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../static/css/bootstrap.css" rel="stylesheet" th:href="@{/css/bootstrap.css}"/>
@@ -38,6 +38,14 @@
                 </li>
 
             </ul>
+            <form id="langForm" action="" method="get">
+                <a href="?lang=pl"> <img src="/images/poland.png" width="30" height="20"  title="PL"> </a>
+                <a href="?lang=pl">PL</a> |
+                <a href="?lang=en"> <img src="/images/united-kingdom.png" width="30" height="20"  title="EN"> </a>
+                <a href="?lang=en">EN</a> |
+                <a href="?lang=de"> <img src="/images/germany.png" width="30" height="20"  title="DE"> </a>
+                <a href="?lang=de">DE</a>
+            </form>
             <form class="form-inline my-2 my-lg-0">
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Logout</button>
             </form>
