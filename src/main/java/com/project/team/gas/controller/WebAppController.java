@@ -17,4 +17,22 @@ public class WebAppController {
         return "index";
     }
 
+    @RequestMapping("/activities")
+    public String activities(Model model){
+
+        return "activities";
+    }
+
+    @RequestMapping("/achievement")
+    public String achievement(Model model){
+
+        return "achievement";
+    }
+
+    @RequestMapping("/topRecords")
+    public String topRecords(Model model){
+
+        return "topRecords";
+    }
+
 }

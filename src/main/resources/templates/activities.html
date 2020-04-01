@@ -1,10 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico"/>
+
+    <title>Gainful Achivement System</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../static/css/bootstrap.css" rel="stylesheet" th:href="@{/css/bootstrap.css}"/>
 </head>
 <body>
+    <div class="container">
+        <!-- Static navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/achievement">Achievement</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/activities">Activities</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/topRecords">Top records</a>
+                    </li>
+
+                </ul>
+                <form id="langForm" action="" method="get">
+                    <a href="?lang=pl"> <img src="/images/poland.png" width="30" height="20"  title="PL"> </a>
+                    <a href="?lang=pl">PL</a> |
+                    <a href="?lang=en"> <img src="/images/united-kingdom.png" width="30" height="20"  title="EN"> </a>
+                    <a href="?lang=en">EN</a> |
+                    <a href="?lang=de"> <img src="/images/germany.png" width="30" height="20"  title="DE"> </a>
+                    <a href="?lang=de">DE</a>
+                </form>
+                <form class="form-inline my-2 my-lg-0">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Logout</button>
+                </form>
+            </div>
+        </nav>
+        <div class="jumbotron">
+
+        </div>
+    </div>
 </body>
 </html>
